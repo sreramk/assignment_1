@@ -134,8 +134,7 @@ async function app() {
 	var console_div = document.getElementById('console');
 	var noaction_report = document.getElementById('adding-image');
 	console_div.innerText = `Top Prediction: ${classes[result.classIndex]}\n`+
-	    		      `Top prediction's probability: ${result.confidences[result.classIndex]}\n`+
-				`Class index: ${result.classIndex}`;
+	    		      `Top prediction's probability: ${result.confidences[result.classIndex]}\n`;
 
 	for (var i = 0; i < classes.length; i++) {
 		if (typeof result.confidences[i] !== 'undefined'){
